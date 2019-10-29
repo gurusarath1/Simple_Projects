@@ -61,16 +61,6 @@ DATA_TYPE* mergeSort(DATA_TYPE ary[], int start, int end)
 	int size_1 = mid - start + 1;
 	int size_2 = end - (mid+1) + 1;
 
-	int min_size = 0;
-
-	if(size_1 <= size_2)
-	{
-		min_size = size_1;
-	}
-	else
-	{
-		min_size =size_2;
-	}
 
 	DATA_TYPE* newAry = (DATA_TYPE*)malloc(sizeof(DATA_TYPE)*(end - start + 1));
 
